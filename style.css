@@ -1,0 +1,128 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: linear-gradient(45deg, yellow, orange);
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+  display: inline-flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.minusButton {
+  margin-right: -1px;
+  width: 40px;
+  height: 37px;
+  background: #fff;
+  border-radius: 50% 0 0 50%;
+}
+
+.minusCircle {
+  cursor: pointer;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-top: 3px;
+  margin-left: 5px;
+  color: red;
+  transition: background 1s;
+}
+.minusCircle p {
+  position: absolute;
+  margin-top: -19px;
+  margin-left: 7px;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.minusCircle:hover {
+  background: red;
+  color: white;
+}
+
+#valueDiv {
+  width: 50px;
+  height: 37px;
+  background: #fff;
+}
+
+.plusButton {
+  width: 40px;
+  height: 37px;
+  background: #fff;
+  border-radius: 0 50% 50% 0;
+}
+
+.plusCircle {
+  cursor: pointer;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-top: 3px;
+  margin-left: 5px;
+  color: green;
+  transition: background 1s;
+}
+.plusCircle p {
+  position: absolute;
+  margin-top: -9px;
+  margin-left: 3px;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.plusCircle:hover {
+  background: green;
+  color: white;
+}
+
+#valueDisplay {
+  text-align: center;
+  color: #9e9e9e;
+  font-size: 30px;
+  font-weight: 600;
+  margin-top: 1px;
+  oapcity: 1;
+  -webkit-animation: fade 1s;
+          animation: fade 1s;
+}
+
+@-webkit-keyframes fade {
+  0% {
+    transform: scale(0.6);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  0% {
+    transform: scale(0.6);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
